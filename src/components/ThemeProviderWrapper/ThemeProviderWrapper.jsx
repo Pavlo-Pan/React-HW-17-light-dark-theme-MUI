@@ -3,8 +3,8 @@ import { Global } from "@emotion/react";
 import { useState } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import resetStyles from "../styles/reset";
-import { lightTheme, darkTheme } from "../styles/styles";
+import resetStyles from "../../styles/reset";
+import { lightTheme, darkTheme } from "../../styles/styles";
 
 const ThemeProviderWrapper = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(false);

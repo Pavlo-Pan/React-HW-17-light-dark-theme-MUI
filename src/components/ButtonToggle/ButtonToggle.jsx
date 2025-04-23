@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { ThemeToggleButton, flex } from '../styles/styles';
+import { ThemeToggleButton, flex } from '../../styles/styles';
 
 export default function ButtonToggle({ isDarkMode, onToggle }) {
     return (

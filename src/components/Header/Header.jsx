@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { flex } from '../styles/styles';
+import { flex } from '../../styles/styles';
 
 export default function Header({ isDarkMode }) {
     return (

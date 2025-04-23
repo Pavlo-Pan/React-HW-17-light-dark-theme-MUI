@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Card, flex } from '../styles/styles';
+import { Card, flex } from '../../styles/styles';
 
 export default function CardToggle({ isDarkMode }) {
     return (
