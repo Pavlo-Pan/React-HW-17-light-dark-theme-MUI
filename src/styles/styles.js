@@ -79,10 +79,10 @@ export const flex = {
     transition: 'all 0.3s ease',
 }
 
-export const container ={
+export const container = {
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     transition: 'all 0.3s ease',
-  }
+}

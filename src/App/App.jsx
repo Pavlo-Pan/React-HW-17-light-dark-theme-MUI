@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { Global } from "@emotion/react";
 import { useState } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -6,7 +8,7 @@ import { lightTheme, darkTheme, container } from '../styles/styles';
 import Header from '../Header/Header';
 import CardToggle from '../CardToggle/CardToggle';
 import ButtonToggle from '../ButtonToggle/ButtonToggle';
-
+import resetStyles from "../styles/reset";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -18,12 +20,13 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <CssBaseline />
-        <Container maxWidth="sm" 
+      <Global styles={resetStyles} />
+      <Container maxWidth="sm"
         sx={container} >
-          <Header isDarkMode={isDarkMode} />
-          <CardToggle isDarkMode={isDarkMode} />
-          <ButtonToggle isDarkMode={isDarkMode} onToggle={toggleTheme} />
-        </Container>
+        <Header isDarkMode={isDarkMode} />
+        <CardToggle isDarkMode={isDarkMode} />
+        <ButtonToggle isDarkMode={isDarkMode} onToggle={toggleTheme} />
+      </Container>
     </ThemeProvider>
   );
 }
