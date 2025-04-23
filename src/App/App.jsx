@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import Header from '../Header/Header';
 import CardToggle from '../CardToggle/CardToggle';
 import ButtonToggle from '../ButtonToggle/ButtonToggle';
